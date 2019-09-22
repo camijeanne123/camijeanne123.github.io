@@ -1,5 +1,41 @@
 <!doctype html>
 <html>
-<head><title>Test Page</title></head>
-<body><h1>Test Page</h1></body>
+<head>
+    <meta charset="utf-8">
+    <title>Index.html</title>
+    <style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        header footer{
+            background-color: aquamarine;
+            font-family: inherit;
+        }
+    </style>
+    <script>
+        function getYear{
+            var year = year;
+            document.getElementById("copyright").innerhtml = year;
+        }
+        function getUpdate{
+            var lastDate = document.lastModified;
+            document.getElementById("update").innerhtml = lastDate;
+        }
+    </script>
+</head>
+<body>
+    <header>Cami Price<header>
+    <h1>CIT 230: Assignment Portal</h1>
+    <li>
+        <ul>
+            <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
+            <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
+            <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
+        </ul>
+    </li>
+    <footer>
+            ©<p class="copyright"></p>
+            | Idaho | 
+            <a href = "https://www.byui.edu/online">BYUI Online Learning</a>
+            | Last Updated: <p class="update"></p>
+    </footer>
+</body>
 </html>
