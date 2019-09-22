@@ -6,8 +6,14 @@
     <style>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         header footer{
+            width: 65%;
             background-color: aquamarine;
             font-family: inherit;
+        }
+        img{
+            float: right;
+            width: 50px;
+            height: 50px;
         }
     </style>
     <script>
@@ -17,25 +23,25 @@
         }
         function getUpdate{
             var lastDate = document.lastModified;
-            document.getElementById("update").innerhtml = lastDate;
+            document.getElementById("update").innerhtml = document.lastModified;
         }
     </script>
 </head>
 <body>
     <header>Cami Price<header>
     <h1>CIT 230: Assignment Portal</h1>
-    <li>
-        <ul>
-            <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
-            <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
-            <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
-        </ul>
-    </li>
+    <img src="IMG_1109.jpg">
+    <ul>
+        <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
+        <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
+         <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
+    </ul>
+    
     <footer>
-            ©<p class="copyright"></p>
+            ©<div class="copyright"></div>
             | Idaho | 
-            <a href = "https://www.byui.edu/online">BYUI Online Learning</a>
-            | Last Updated: <p class="update"></p>
+            <a href = "https://www.byui.edu/online">BYUI Online Learning</a> | <br>
+            Last Updated: <div class="update"></div>
     </footer>
 </body>
 </html>
