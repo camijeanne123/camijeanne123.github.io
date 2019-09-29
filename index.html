@@ -1,47 +1,40 @@
-<!doctype html>
+<<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>Index.html</title>
-    <style>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        header footer{
-            width: 65%;
-            background-color: aquamarine;
-            font-family: inherit;
-        }
-        img{
-            float: right;
-            width: 50px;
-            height: 50px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <script>
-        function getYear{
+        function getYear(){
             var year = year;
             document.getElementById("copyright").innerhtml = year;
         }
-        function getUpdate{
+        function getUpdate(){
             var lastDate = document.lastModified;
             document.getElementById("update").innerhtml = document.lastModified;
         }
     </script>
 </head>
-<body>
-    <header>Cami Price<header>
-    <h1>CIT 230: Assignment Portal</h1>
-    <img src="IMG_1109.jpg">
-    <ul>
-        <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
-        <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
-         <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
-    </ul>
-    
+<body onload="getYear();getUpdate();">
+    <header>
+      <h1>
+        Cami Price
+      </h1>
+  </header>
+    <div class="main">
+      <h4>CIT 230: Assignment Portal</h4>
+      <img src="https://cdn.glitch.com/8e0b5acc-d454-4e67-aa14-c8098ad77086%2FIMG_1093.jpg?v=1569132524660">
+      <ul>
+          <li>Lesson 02:<a href="index.html">Assignment Link</a></li>
+          <li>Lesson 03:<a href="index.html">Assignment Link</a></li>
+           <li>Lesson 04:<a href="index.html">Assignment Link</a></li>
+      </ul>
+    </div>
     <footer>
-            ©<div class="copyright"></div>
-            | Idaho | 
-            <a href = "https://www.byui.edu/online">BYUI Online Learning</a> | <br>
-            Last Updated: <div class="update"></div>
+      ©2019 | Idaho | <a href = "https://www.byui.edu/online">BYUI Online Learning</a> <br>
+            Last Updated:<div class="update"></div>
     </footer>
 </body>
 </html>
