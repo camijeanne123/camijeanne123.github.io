@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+img{
+    border-color: black;
+    border-width: 1px
+}
+h1,h2,h3,h4,h5,h6{
+    background-color: slategray;
+}
+header{
+    background-color: slategray;
+    text-align: center;
+}
+
+.main{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    font: "Merriweather";
+    text-align: center;
+    padding: 1em;
+}
+.head1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+.head2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.img1{
+    grid-column: 1/2;
+    grid-row: 3/6;
+}
+.par1{
+    grid-column: 1/2;
+    grid-row: 6/8;
+}
+.head3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+.head4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.img2{
+    grid-column: 2/3;
+    grid-row: 3/6;
+}
+.par2{
+    grid-column: 2/3;
+    grid-row: 6/8;
+}
+.head5{
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+}
+.head6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.img3{
+    grid-column: 3/4;
+    grid-row: 3/6;
+}
+.par3{
+    grid-column: 3/4;
+    grid-row: 6/8;
+}
