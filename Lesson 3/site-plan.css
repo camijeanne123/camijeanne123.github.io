@@ -1,0 +1,33 @@
+header{
+    display:grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+  color: #536B78;
+  background-color: #59c3c3;
+  font-family: "Montserrat";
+  border: 1px solid #637081;
+}
+ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 95px 170px 130px 100px;
+    margin: 0;
+    font-family: "Montserrat";
+  }
+  nav a{
+    color:#536B78;
+  }
+  a:hover{
+    color: white;
+  }
+  footer{
+    justify-items: space-between;
+    background-color: #59c3c3;
+    font-family: "Montserrat";
+    margin-top: 30px;
+    border: 1px solid #637081;
+  }
+  .header-logo{
+      background-color: white;
+      border: 1px solid #637081;
+  }
