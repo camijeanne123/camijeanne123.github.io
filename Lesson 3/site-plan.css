@@ -1,13 +1,14 @@
 body{
-    width: 60%;
+    max-width: 900px;
     margin: auto;
-    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
 }
 header{
-  display:grid;
-  grid-template-columns: 10% 90%;
-  grid-template-rows: 50% 30% 20%;
-  align-items: center;
+  display: flex;
+  align-content: center;
   color: black;
   background-color: #59c3c3;
   font-family: "Montserrat";
@@ -32,11 +33,12 @@ ul{
     color: white;
   }
   footer{
-    justify-items: space-between;
+    align-content: center;
     background-color: #59c3c3;
     font-family: "Montserrat";
     margin-top: 30px;
     border: 1px solid #637081;
+    display: flex;
   }
   .header-logo{
       background-color: white;
