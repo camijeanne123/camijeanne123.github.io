@@ -56,6 +56,10 @@ nav ul{
       font-family: "Montserrat";
       padding-top: 5px
   }
+  table{
+      border: 1px solid #637081;
+      border-spacing: 5px;
+  }
   .header-logo{
       background-color: #59c3c3;
       grid-row: 1/2;
