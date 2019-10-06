@@ -29,6 +29,8 @@ width: 100%;
 body{
 text-align: left;
 width: 500px;
+justify-content: center;
+margin: auto;
 
 }
 p div{
