@@ -4,7 +4,7 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
 
 }
 header{
@@ -12,19 +12,22 @@ header{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50% 30% 20%;
-  align-content: center;
+  justify-content: center;
   color: black;
   background-color: #59c3c3;
   font-family: "Montserrat";
   border: 1px solid #637081;
+  max-height: 250px;
 }
 nav ul{
     list-style-type: none;
     display: grid;
+    grid-template-columns: repeat(auto);
     padding: 0;
     margin: 0;
     font-family: "Montserrat";
-    background-color: white;
+    background-color: #59c3c3;
+    border: 2px solid #637081;
   }
   nav a{
     color: black;
@@ -38,12 +41,15 @@ nav ul{
     color: white;
   }
   footer{
-    align-content: center;
+    justify-content: center;
     background-color: #59c3c3;
     font-family: "Montserrat";
     margin-top: 30px;
     border: 1px solid #637081;
     display: flex;
+  }
+  h1,h2,h3,h4,h5,h6{
+      justify-content: center
   }
   .header-logo{
       background-color: #59c3c3;
