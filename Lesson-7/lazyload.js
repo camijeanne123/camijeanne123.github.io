@@ -27,3 +27,10 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) =>{
 images.forEach (image =>{
   imgObserver.observe(image);
 })
+
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+      image.removeAttribute('data-src');
+    };
+  };
