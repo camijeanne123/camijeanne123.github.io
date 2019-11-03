@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 /*Desktop View********************************************/
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 1050px) {
   body {
     margin: auto;
     /*     display: flex;
@@ -60,7 +60,7 @@
     margin: auto;
   }
   a:hover {
-    color: #637081;
+    color: #59c3c3;
     background-color: white;
   }
 
@@ -87,7 +87,8 @@
     background-color: white;
   }
   footer {
-    margin-top: 20px;
+    margin-top: 35px;
+    padding: 5px;
   }
   th,
   tr,
@@ -134,8 +135,11 @@
     display: flex;
     position: relative;
     height: 350px;
-    max-width: 100%;
+    width: 100%;
     margin-bottom: -25px;
+  }
+  picture source {
+    width: 100%;
   }
   .summContain {
     display: flex;
@@ -152,7 +156,7 @@
     color: white;
     padding: 5px;
   }
-  .summary-header{
+  .summary-header {
     margin-bottom: -10px;
   }
   .FiveDayContain {
@@ -203,7 +207,7 @@
     width: 100%;
   }
   .mapImg {
-/*     position: absolute; */
+    /*     position: absolute; */
     max-width: 48%;
     height: 244px;
     left: 10%;
@@ -212,7 +216,7 @@
     order: 1;
     padding: 2px;
   }
-  .contact-total{
+  .contact-total {
     display: flex;
     flex-flow: column;
     order: 2;
@@ -223,7 +227,6 @@
     order: 1;
     margin-bottom: 5px;
     left: 50%;
-    
   }
   .contactInfo {
     position: absolute;
@@ -253,15 +256,69 @@
   }
   .hero-img-fig img {
     width: 100%;
-    max-height: 100%;
+    height: 100%;
   }
   .dropbtn {
-  display: none;
+    display: none;
   }
-  
+  .photos {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 200px 200px 200px;
+    grid-column-gap: 15px;
+    grid-row-gap: 40px;
+    padding: 0;
+    max-width: 100%;
+  }
+  .photos img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .photo1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .photo2:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  .photo3:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  .photo4:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  .photo5:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  .photo6:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  .photo7:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  .photo8:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  .photo9:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  figcaption {
+    border: 0.5px solid black;
+    margin-top: -5x;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    margin-top: -4px;
+    margin-bottom: 20px;
+    height: 30px;
+    max-width: 100%;
+  }
+  figure {
+    margin: 0;
+  }
 }
 /* Phone View ******************************/
-@media only screen and (max-width: 879px) and (min-width: 560px) {
+@media only screen and (max-width: 1049px) and (min-width: 680px) {
   body {
     margin: auto;
     justify-content: center;
@@ -389,7 +446,7 @@
     display: flex;
     position: relative;
     height: auto;
-    max-width: 100%;
+    width: 100%;
     margin: auto;
     margin-bottom: 10px;
   }
@@ -408,7 +465,7 @@
     color: white;
     padding: 5px;
   }
-  .summary-header{
+  .summary-header {
     margin-bottom: -8px;
   }
   .FiveDayContain {
@@ -442,7 +499,7 @@
     border: 1px solid black;
     order: 2;
   }
-   .contactContain {
+  .contactContain {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -453,7 +510,7 @@
     width: 100%;
   }
   .mapImg {
-/*     position: absolute; */
+    /*     position: absolute; */
     max-width: 48%;
     height: 244px;
     left: 10%;
@@ -462,7 +519,7 @@
     order: 1;
     padding: 2px;
   }
-  .contact-total{
+  .contact-total {
     display: flex;
     flex-flow: column;
     order: 2;
@@ -473,7 +530,6 @@
     order: 1;
     margin-bottom: 5px;
     left: 50%;
-    
   }
   .contactInfo {
     position: absolute;
@@ -496,49 +552,71 @@
   }
   .hero-img-fig {
     width: 100%;
+    height: 280px;
   }
   .hero-img-fig img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
   }
   .dropdown {
-  position: relative;
-  display: inline-block;
-  background-color: #637081;
-  width: 100%;
-  text-align: center;
-}
+    position: relative;
+    display: inline-block;
+    background-color: #637081;
+    width: 100%;
+    text-align: center;
+  }
   .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #59c3c3;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  color: white;
-  justify-content: center;
-  left: 37%;
-  
+    display: none;
+    position: absolute;
+    background-color: #59c3c3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: white;
+    justify-content: center;
+    left: 37%;
   }
   .dropdown-content a:hover {
     background-color: white;
     color: #59c3c3;
   }
   .dropdown:hover .dropdown-content {
-  display: block;
-}
+    display: block;
+  }
   .dropbtn {
-  background-color: #637081;
-  color: white;
-  padding: 5px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  margin: 3px
+    background-color: #637081;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 3px;
+  }
+  .photos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+  .photos img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+  }
+  figcaption {
+    display: none;
+  }
+  figure {
+    margin: 0;
+    padding: 0;
   }
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 679px) {
   body {
     margin: auto;
     justify-content: center;
@@ -626,7 +704,7 @@
   footer {
     margin-top: 20px;
   }
-  p{
+  p {
     margin: 10px;
   }
   .header-logo {
@@ -667,7 +745,7 @@
     display: flex;
     position: relative;
     height: 200px;
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 10px;
     margin: auto;
   }
@@ -686,7 +764,7 @@
     color: white;
     padding: 5px;
   }
-  .summary-header{
+  .summary-header {
     margin-bottom: -5px;
     margin-top: 4px;
   }
@@ -702,10 +780,9 @@
     background-color: #637081;
     color: white;
     max-width: 100%;
-    
   }
   .artConatin {
-/*     display: flex; */
+    /*     display: flex; */
     flex-flow: column;
     position: absolute;
     max-width: 50%;
@@ -723,7 +800,7 @@
     order: 2;
     padding: 10px;
   }
-   .contactContain {
+  .contactContain {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -734,7 +811,7 @@
     width: 100%;
   }
   .mapImg {
-/*     position: absolute; */
+    /*     position: absolute; */
     max-width: 48%;
     height: 244px;
     left: 10%;
@@ -743,7 +820,7 @@
     order: 1;
     padding: 2px;
   }
-  .contact-total{
+  .contact-total {
     display: flex;
     flex-flow: column;
     order: 2;
@@ -754,7 +831,6 @@
     order: 1;
     margin-bottom: 5px;
     left: 50%;
-    
   }
   .contactInfo {
     position: absolute;
@@ -777,45 +853,66 @@
   }
   .hero-img-fig {
     width: 100%;
+    height: 200px;
   }
   .hero-img-fig img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
   }
   .dropdown {
-  position: relative;
-  display: inline-block;
-  background-color: #637081;
-  width: 100%;
-  text-align: center;
-}
+    position: relative;
+    display: inline-block;
+    background-color: #637081;
+    width: 100%;
+    text-align: center;
+  }
   .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #59c3c3;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  color: white;
-  justify-content: center;
-  right: 35%;
+    display: none;
+    position: absolute;
+    background-color: #59c3c3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: white;
+    justify-content: center;
+    right: 35%;
   }
   .dropdown-content a:hover {
     background-color: white;
     color: #59c3c3;
   }
   .dropdown:hover .dropdown-content {
-  display: block;
-}
-  .dropbtn {
-  background-color: #637081;
-  color: white;
-  padding: 5px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  margin: 3px
+    display: block;
   }
-
+  .dropbtn {
+    background-color: #637081;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 3px;
+  }
+  .photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+  }
+  .photos img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+  }
+  figcaption {
+    display: none;
+  }
+  figure {
+    margin: 0;
+    padding: 0;
+  }
 }
-
