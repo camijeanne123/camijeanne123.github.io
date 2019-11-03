@@ -6,6 +6,7 @@ function preloadImage(img){
     return;
   }
   img.src = src
+  img.forEach(loadImages);
 }
 
 const imgOptions = {

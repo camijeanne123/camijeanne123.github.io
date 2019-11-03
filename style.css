@@ -1,0 +1,38 @@
+footer{
+    width: 500px;
+    height: 50px;
+    background-color: aquamarine;
+    font-family: inherit;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header{
+    width: 500px;
+    height: 50px;
+    background-color: aquamarine;
+    font-family: inherit;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    float: right;
+    width: 25%;
+    height: 25%;
+    margin-right: 10px;
+    margin-top: -6.5em;
+}
+h4{
+text-decoration: underline;
+width: 100%;
+}
+body{
+text-align: left;
+width: 500px;
+justify-content: center;
+margin: auto;
+
+}
+p div{
+width: 100%;
+}
