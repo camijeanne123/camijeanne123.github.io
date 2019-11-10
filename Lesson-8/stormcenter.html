@@ -32,7 +32,7 @@
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="https://camijeanne123.github.io/camijeanne123.github.io/Lesson-6/preston-6.html">Preston</a></li>
+            <li><a href="https://camijeanne123.github.io/Lesson-6/preston-6.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="https://camijeanne123.github.io/Lesson-8/stormcenter.html" class="active">Storm Center</a></li>
@@ -42,16 +42,28 @@
       </div>
     </div>
     <main>
+      <h2>
+        Storm Center
+      </h2>
+      <p class="required-legend">
+          <span class="red">|   </span>  Indicates required field
+      </p>
        <form>
         <fieldset>
-          <label>Full Name: <input type="text" pattern="[a-zA-Z0 ]{5,}" required></label><br>
-         <label>Email: <input type="email" value="123storms@email.com"></label><br>
-         <label>Phone Number: <input type="tel" required></label><br>
-         <label>Zip Code: <input type="number" required></label>
+          <legend>
+            Contact Information
+          </legend>
+          <label>Full Name: <br><input type="text" pattern="[a-zA-Z0 ]{5,}" name="full-name" required></label><br>
+         <label>Email: <br><input type="email" value="123storms@email.com" name="email"></label><br>
+         <label>Phone Number: <br><input type="tel" name="number" required></label><br>
+         <label>Zip Code: <br><input type="number" name="zip" required></label>
         </fieldset>
         <fieldset>
-         <label>Date of Storm: <input type="date"></label><br>
-         <label>Type of Storm: <input list="storms"></label><br>
+          <legend>
+            Storm Information
+          </legend>
+         <label>Date of Storm: <br><input type="date" name="storm-date"></label><br>
+         <label>Type of Storm: <br><input list="storms" name="storm-type"></label><br>
             <datalist id="storms">
               <option value="Flash Flood"></option>
               <option value="Hail"></option>
@@ -59,29 +71,35 @@
               <option value="Thunderstorm"></option>
               <option value="Tornado"></option>
             </datalist>
-           <label>Storm Severity: 
-          <input type="range" id="rating" value="5" min="1" max="10" step="1"  oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></label>
+           <label>Storm Severity (1-10): <br>
+          <input type="range" id="rating" value="5" min="1" max="10" step="1"  oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="severity-rating"></label>
           <span id="ratingvalue">5</span><br>
-          <label>Storm Region: 
-            <select >
-                <option value="Select Region" disabled>Select Region..</option>
+          <label>Storm Region: <br>
+            <select>
+                <option value="Select Region" >Select Region..</option>
                 <option value="Preston">Preston</option>
                 <option value="Soda Spring">Soda Springs</option>
                 <option value="Fish Haven">Fish Haven</option>
             </select>
             </label><br>
-          <label>Are you in danger?
+          <label>Are you in danger?</label>
             <input type="radio" name="danger" value="Yes">Yes
             <input type="radio" name="danger" value="No">No
             <input type="radio" name="danger" value="Maybe">Maybe
-          </label>
+          
          </fieldset>
          <fieldset>
-           Additional Information, Comments, or Concerns
-           <textarea></textarea>
-           <input type="submit">
+           <legend>
+             Additional Information
+           </legend>
+           <label>
+             Comments: 
+           <textarea name="addit-comments"></textarea><br> 
+           </label>
          </fieldset>
-         
+         <div class="submit-div">
+         <input type="submit" onclick="window.location.href = 'https://camijeanne123.github.io/Lesson-8/thanks.html';" name="submit-button" value="Submit Storm Center Form">
+         </div>
       </form>
     </main>
     <footer>

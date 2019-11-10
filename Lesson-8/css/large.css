@@ -70,7 +70,7 @@
   h4,
   h5,
   h6 {
-    justify-content: center;
+    text-align: center;
     font-family: "Montserrat";
     /*       padding-top: 5px; */
   }
@@ -302,6 +302,10 @@
   .photo9:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+  form{
+    width: 60%;
+    padding: 10px;
+  }
   figcaption {
     border: 0.5px solid black;
     margin-top: -5x;
@@ -309,12 +313,59 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-top: -4px;
     margin-bottom: 20px;
     height: 30px;
     max-width: 100%;
   }
   figure {
     margin: 0;
+  }
+  fieldset{
+    margin: 10px;
+    padding: 15px;
+  }
+  input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="email"], input[list="storms"], textarea{
+    width: 95%;
+    background-color: #E0E0E0;
+  }
+  input[type="email"]:required, input[type="email"]:required, input[type="email"]:required{}
+  input[type="email"]{
+    color: grey;
+  }
+  textarea{
+    height: 150px;
+    resize: none;
+  }
+  input, textarea{
+    margin: 20px;
+    height: 30px;
+  }
+  input[type= submit]{
+    background-color: #59c3c3;
+    color: white;
+    width: 40%;
+    height: 50px;
+    
+  }
+  input[type="text"]:required, input[type="tel"]:required, input[type="number"]:required{
+    border-right: 5px solid red;
+  }
+  select{
+    margin-top: 20px;
+    height: 20px;
+  }
+  .submit-div{
+    text-align: center;
+  }
+  .required-legend{
+    float: right;
+    text-align: right!important;
+  }
+  .red{
+    font-size: 15px;
+    color: red;
+  }
+  p{
+    text-align: center;
   }
 }
