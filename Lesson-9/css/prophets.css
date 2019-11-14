@@ -1,0 +1,42 @@
+/* Small Viewport */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: darkblue;
+    text-align: center;
+}
+section {
+    border: 1px solid black;
+    background-color: #82EEFD;
+    text-align: center;
+}
+
+img {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 0 20px #000;
+}
+
+/*Medium Viewport*/
+@media only screen and (min-width: 37.5em) {
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+/*Large Viewport*/
+@media only screen and (min-width: 60em){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
