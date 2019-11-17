@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather Or Not || Home</title>
+    <meta charset="utf-8" />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+  </head>
+  <body onload="todaysDate(); getWindChill();">
+    <header>
+      <div class="headings">
+        <h1 class="header-head1">
+          Weather You Care Or Not
+        </h1>
+        <h4 class="header-head2">
+          Whether you want the weather or not, we are going to give it to you
+        </h4>
+      </div>
+      <img
+        class="header-logo"
+        src="https://cdn.glitch.com/8e0b5acc-d454-4e67-aa14-c8098ad77086%2Ficonfinder_sun_727676.png?v=1570343078085"
+        alt="Weather You Care Or Not Logo"
+      />
+    </header>
+    <div class="dropdown">
+      <button class="dropbtn">
+        Menu
+      </button>
+      <div class="dropdown-content">
+        <nav>
+          <ul>
+            <li>
+              <a href="https://camijeanne123.github.io/Lesson-9/index.html" class="active">Home</a>
+            </li>
+            <li>
+              <a href="https://camijeanne123.github.io/Lesson-6/preston-6.html">Preston</a>
+            </li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li>
+              <a href="https://camijeanne123.github.io/Lesson-8/stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+              <a href="https://camijeanne123.github.io/Lesson-7/gallery-7.html">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <h1>
+        Welcome to the home of Weather or Not!
+      </h1>
+      <div class="current">
+        <h2>
+          Coldest Air of the Season Set Records in the Rockies, West
+        </h2>
+        <p class="credit">By The Weather Channel</p>
+        <picture class="current_img">
+          <source
+            media="(min-width: 1px)"
+            srcset="images/Cold_prim_small.jpg"
+            alt="Cold Front"
+          />
+          <source
+            media="(min-width: 680px)"
+            srcset="images/Cold_prim_medium.jpg"
+            alt="Cold Front"
+          />
+          <source
+            media="(min-width: 1000px)"
+            srcset="images/Cold_prim_large.jpg"
+            alt="Cold Front"
+          />
+          <img
+            class="main-img"
+            src="images\Cold_prim_1025a.jpg"
+            alt="Cold Front"
+          />
+        </picture>
+        <p class="credit">Photo by The Weather Channel</p>
+        <p>
+          The most expansive chill so far this season has swept into much of the United States, ushering in much colder air that has set record lows for mid-October in the West.
+
+This system has also brought a major, potentially record-setting October snowstorm in the Northern Plains.<br>
+
+
+Very sharp temperature drops have accompanied the front.
+
+After a high of 74 degrees Wednesday afternoon, Cheyenne, Wyoming, experienced wind chills near zero degrees Thursday morning. Denver dropped from a high of 83 degrees Wednesday to a low of 13 degrees Thursday night, a 70-degree temperature change, which ranked as the greatest one- and two-day temperature drops on record for October and tied for the fourth-largest two-day temperature drop for any month in the Mile High City.
+
+Record-cold temperatures have also been set this week.<br>
+
+Great Falls, Montana, dropped to zero degrees Thursday morning, setting a new record for the coldest temperature so early in the season. The previous earliest zero-degree temperature was on Oct. 27, 1925.
+          <a href="https://weather.com/forecast/national/news/2019-10-05-colder-pattern-change-fall-temperatures-first-snow">Read More..</a>
+        </p>
+      </div>
+      <div class="townsEvents">
+        <div class="towns"></div>
+        <div class="events">
+          <h3>
+            Events happening near by!
+          </h3>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        © 2019 || Cami Price || BYUI <br />
+        <span id="footdate"></span>
+      </p>
+    </footer>
+  </body>
+</html>

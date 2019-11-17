@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/*Desktop View********************************************/
+@media only screen and (min-width: 1050px) {
+  body {
+    margin: auto;
+    /*     display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    font-family: "Montserrat";
+  }
+  main,
+  footer {
+    padding-top: 15px;
+    font-family: "Montserrat";
+    max-width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  header,
+  footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    color: black;
+    background-color: #59c3c3;
+    font-family: "Montserrat";
+    border: 1px solid #637081;
+    max-height: 20%;
+    margin: auto;
+    width: 100%;
+  }
+
+  nav {
+    background-color: #637081;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.75em;
+    text-decoration: none;
+    font-size: 1em;
+    margin: auto;
+  }
+  a:hover {
+    color: #59c3c3;
+    background-color: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+    font-family: "Montserrat";
+    /*       padding-top: 5px; */
+  }
+  h2,
+  h3,
+  h5,
+  h6 {
+    text-decoration: underline;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: white;
+  }
+  footer {
+    margin-top: 35px;
+    padding: 5px;
+  }
+  th,
+  tr,
+  td {
+    border: 1px solid black;
+    text-align: center;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  th {
+    height: 20%;
+    background-color: #59c3c3;
+    color: white;
+  }
+
+  .header-logo {
+    max-width: 150px;
+    height: auto;
+  }
+  .headings {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .header-head1 {
+    margin-bottom: -5px;
+    margin: auto;
+  }
+  .header-head2 {
+    margin-bottom: -5px;
+    margin: auto;
+    font-style: italic;
+  }
+  .active {
+    color: black;
+    background-color: lightgrey;
+  }
+  .mainContain {
+    display: flex;
+    position: relative;
+    height: 350px;
+    width: 100%;
+    margin-bottom: -25px;
+  }
+  picture source {
+    width: 100%;
+  }
+  .summContain {
+    display: flex;
+    position: absolute;
+    flex-flow: column;
+    background-color: #637081;
+    top: 9%;
+    left: 6%;
+    max-width: 33%;
+    height: 150px;
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+  }
+  .summary-header {
+    margin-bottom: -10px;
+  }
+  .FiveDayContain {
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 25px;
+  }
+  .articleContain {
+    display: flex;
+    position: relative;
+    height: 250px;
+    margin-top: 20px;
+    margin: auto;
+    background-color: #637081;
+    color: white;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .artConatin {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    max-width: 65%;
+    right: 200px;
+    order: 1;
+  }
+  .articleImg {
+    position: absolute;
+    max-width: 25%;
+    height: 200px;
+    right: 8px;
+    bottom: 10px;
+    border: 1px solid black;
+    order: 2;
+  }
+  .contactContain {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 250px;
+    margin-top: 20px;
+    background-color: #637081;
+    color: white;
+    width: 100%;
+  }
+  .mapImg {
+    /*     position: absolute; */
+    max-width: 48%;
+    height: 244px;
+    left: 10%;
+    bottom: 10px;
+    border: 1px solid black;
+    order: 1;
+    padding: 2px;
+  }
+  .contact-total {
+    display: flex;
+    flex-flow: column;
+    order: 2;
+    left: 5%;
+  }
+  .contactHead {
+    position: absolute;
+    order: 1;
+    margin-bottom: 5px;
+    left: 50%;
+  }
+  .contactInfo {
+    position: absolute;
+    order: 2;
+    top: 50px;
+    left: 50%;
+  }
+  .footdate {
+    justify-items: center;
+  }
+  .small-overlay {
+    display: none;
+  }
+  .medium-overlay {
+    display: none;
+  }
+  .large-overlay {
+    position: absolute;
+    right: 30%;
+    top: 40%;
+    color: white;
+    font-size: 6em;
+  }
+  .hero-img-fig {
+    width: 100%;
+    height: 350px;
+  }
+  .hero-img-fig img {
+    width: 100%;
+    height: 100%;
+  }
+  .dropbtn {
+    display: none;
+  }
+  .photos {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 200px 200px 200px;
+    grid-column-gap: 15px;
+    grid-row-gap: 40px;
+    padding: 0;
+    max-width: 100%;
+  }
+  .photos img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .photo1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .photo2:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .photo3:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .photo4:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .photo5:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .photo6:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .photo7:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+  }
+  .photo8:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .photo9:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  form{
+    width: 60%;
+    padding: 10px;
+  }
+  figcaption {
+    border: 0.5px solid black;
+    margin-top: -5x;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 30px;
+    max-width: 100%;
+  }
+  figure {
+    margin: 0;
+  }
+  fieldset{
+    margin: 10px;
+    padding: 15px;
+  }
+  input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="email"], input[list="storms"], textarea{
+    width: 95%;
+    background-color: #E0E0E0;
+  }
+  input[type="email"]:required, input[type="email"]:required, input[type="email"]:required{}
+  input[type="email"]{
+    color: grey;
+  }
+  textarea{
+    height: 150px;
+    resize: none;
+  }
+  input, textarea{
+    margin: 20px;
+    height: 30px;
+  }
+  input[type= submit]{
+    background-color: #59c3c3;
+    color: white;
+    width: 40%;
+    height: 50px;
+    
+  }
+  input[type="text"]:required, input[type="tel"]:required, input[type="number"]:required{
+    border-right: 5px solid red;
+  }
+  select{
+    margin-top: 20px;
+    height: 20px;
+  }
+  .submit-div{
+    text-align: center;
+  }
+  .required-legend{
+    float: right;
+    text-align: right!important;
+  }
+  .red{
+    font-size: 15px;
+    color: red;
+  }
+  p{
+    text-align: center;
+  }
+  .townsEvents{
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    height: 100%;
+  }
+  .towns{
+    position: absolute;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75%;
+    left: 0px;
+    background-color: lightgrey;
+  }
+  .towns section{
+    border: 1px solid black;
+    margin: 20px;
+  }
+  .events{
+    position: absolute;
+    right: 0px;
+    width: 25%;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid black;
+    background-color: white;
+  }
+  .current{
+    border: 1px solid black;
+    width: 100%;
+    background-color: #637081;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .current p{
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+  }
+  .credit{
+    font-size: .4em;
+  }
+  .current img {
+    width: 90%;
+    justify-content: center;
+    height: 450px;
+  }
+}
