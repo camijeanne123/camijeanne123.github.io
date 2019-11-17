@@ -52,47 +52,33 @@ function todaysDate() {
       for (let i = 0; i < towns.length; i++ ) {
         if (towns[i].name === "Preston" ||  towns[i].name ==="Soda Springs" || towns[i].name === "Fish Haven"){
           let card = document.createElement('section');
+          let block = document.createElement('div');
           let h2 = document.createElement('h2');
-          let p1 = document.createElement('p');
+          let motto = document.createElement('p');
           let p2 = document.createElement('p');
           let p3 = document.createElement('p');
           let p4 = document.createElement('p');
+          let image = document.createElement('img');
   
           h2.textContent = towns[i].name;
-          p1.textContent = towns[i].motto;
+          motto.textContent = towns[i].motto;
           p2.textContent = 'Year Founded: ' + towns[i].yearFounded;
           p3.textContent = 'Population: ' + towns[i].currentPopulation;
           p4.textContent = 'Average Annual Rainfall: ' + towns[i].averageRainfall;
-  
+          image.setattribute('src', 'images/' + towns[i].photo);
+          image.setattribute('alt', towns[i].name);
+          
+          card.appendChild(block);
           card.appendChild(h2);
-          card.appendChild(p1);
+          card.appendChild(motto);
           card.appendChild(p2);
           card.appendChild(p3);
           card.appendChild(p4);
+          card.appendChild(image);
           
           document.querySelector('div.towns').appendChild(card);
        }  
     }
   });
-  fetch(requestURL) .then(function (response) {
-      return response.json();
-  })
-  .then(function (jsonObject) {
-      const towns = jsonObject['towns'];
-      for (let i = 0; i < towns.length; i++ ) {
-        if (towns[i].name === "Preston" ||  towns[i].name ==="Soda Springs" || towns[i].name === "Fish Haven"){
-          let card = document.createElement('div');
-          let h5 = document.createElement('h5');
-          let p1 = document.createElement('p');
-          
-          h5.textContent = towns[i].name
-          p1.textContent = towns[i].events;
-          
-          card.appendChild(h5);
-          card.appendChild(p1);
   
-          document.querySelector('div.events').appendChild(card);
-       }  
-    }
-  });
   

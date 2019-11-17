@@ -375,36 +375,38 @@
     p{
       text-align: center;
     }
-     }
-    .townsEvents{
-      display: flex;
-      position: relative;
-      width: 100%;
-      flex-direction: row;
-      height: 600px;
-    }
-    .towns{
-      position: absolute;
+   .towns{
       display: grid;
       height: 100%;
-      grid-template-columns: 1fr 1fr;
-      width: 75%;
+      grid-template-columns: 1fr;
+      width: 100%;
       left: 0px;
-      background-color: lightgrey;
     }
     .towns section{
-      border: 1px solid black;
-      margin: 20px;
+      border: 2px solid #59c3c3;
+      margin: 10px 10px 10px 0px;
+      background-color: #637081;
+      color: white;
     }
-    .events{
-      position: absolute;
-      right: 0px;
-      width: 25%;
-      display: grid;
-      grid-template-columns: 1fr;
-      border: 1px solid black;
-      background-color: white;
+    .towns p{
+      float: left;
+      width: 50%;
     }
+    .towns img{
+      float: right;
+      width: 50%
+    }
+    section.card:nth-of-type(3) img {
+          width: 50%;
+          float: left;
+          margin: auto;
+      }
+  
+      section.card:nth-of-type(3) div {
+          width: 50%;
+          float: right;
+          margin: auto;
+      }
     .current{
       border: 1px solid black;
       width: 100%;
@@ -428,5 +430,5 @@
       justify-content: center;
       height: 450px;
     }
-
   
+  }
