@@ -65,7 +65,7 @@ function todaysDate() {
           p2.textContent = 'Year Founded: ' + towns[i].yearFounded;
           p3.textContent = 'Population: ' + towns[i].currentPopulation;
           p4.textContent = 'Average Annual Rainfall: ' + towns[i].averageRainfall;
-          image.setattribute('src', 'images/' + towns[i].photo);
+          image.setattribute('src', 'camijeanne123.github.io/Lesson-9/images/' + towns[i].photo);
           image.setattribute('alt', towns[i].name);
           
           card.appendChild(block);
