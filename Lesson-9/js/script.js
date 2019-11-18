@@ -52,32 +52,34 @@ fetch(requestURL) .then(function (response) {
     for (let i = 0; i < towns.length; i++ ) {
       if (towns[i].name === "Preston" ||  towns[i].name ==="Soda Springs" || towns[i].name === "Fish Haven"){
         let card = document.createElement('section');
+        let photo = document.createElement('img');
         let block = document.createElement('div');
         let h2 = document.createElement('h2');
         let motto = document.createElement('p');
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
         let p4 = document.createElement('p');
-        let photo = document.createElement('img');
+        
+        motto.className = "motto";
+        card.className = "town";
 
+        photo.setAttribute('src', 'images/' + towns[i].photo);
+        photo.setAttribute('alt', towns[i].name);
         h2.textContent = towns[i].name;
         motto.textContent = towns[i].motto;
         p2.textContent = 'Year Founded: ' + towns[i].yearFounded;
         p3.textContent = 'Population: ' + towns[i].currentPopulation;
         p4.textContent = 'Average Annual Rainfall: ' + towns[i].averageRainfall;
-        photo.setAttribute('src', 'images/' + towns[i].photo);
-        photo.setAttribute('alt', towns[i].name);
         
-        card.appendChild(block);
-        card.appendChild(h2);
-        card.appendChild(motto);
-        card.appendChild(p2);
-        card.appendChild(p3);
-        card.appendChild(p4);
         card.appendChild(photo);
+        card.appendChild(block);
+        block.appendChild(h2);
+        block.appendChild(motto);
+        block.appendChild(p2);
+        block.appendChild(p3);
+        block.appendChild(p4);
         
         document.querySelector('div.towns').appendChild(card);
      }  
   }
 });
-  
