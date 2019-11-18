@@ -66,7 +66,7 @@ fetch(requestURL) .then(function (response) {
         p3.textContent = 'Population: ' + towns[i].currentPopulation;
         p4.textContent = 'Average Annual Rainfall: ' + towns[i].averageRainfall;
         photo.setAttribute('src', 'images/' + towns[i].photo);
-        photo.setAdttribute('alt', towns[i].name);
+        photo.setAttribute('alt', towns[i].name);
         
         card.appendChild(block);
         card.appendChild(h2);
