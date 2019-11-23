@@ -101,13 +101,13 @@ function todaysDate() {
   
       document.getElementById("currently").textContent =
         jsObject.weather[0].description;
-      document.getElementById("temp").textContent = jsObject.main.temp + "°F";
+      document.getElementById("temp").textContent = jsObject.main.temp;
       document.getElementById("humidity").textContent =
         jsObject.main.humidity + "%";
-      document.getElementById("speed").textContent = jsObject.wind.speed + "mph";
+      document.getElementById("speed").textContent = jsObject.wind.speed;
   
       const imagesrc =
-        "https://openweathermap.org/img/w/" + jsObject.weather[0].icon + ".jng";
+        "https://openweathermap.org/img/w/" + jsObject.weather[0].icon + ".jpg";
       const desc = jsObject.weather[0].description;
     
       document.getElementById("icon").setAttribute("src", imagesrc);
