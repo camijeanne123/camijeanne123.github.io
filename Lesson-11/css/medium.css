@@ -318,6 +318,7 @@
       form{
       width: 70%;
       padding: 10px;
+      margin: auto;
     }
     fieldset{
       margin: 10px;
@@ -355,10 +356,6 @@
     }
     .submit-div{
       text-align: center;
-    }
-    .required-legend{
-      float: right;
-      text-align: right!important;
     }
     .red{
       font-size: 15px;
