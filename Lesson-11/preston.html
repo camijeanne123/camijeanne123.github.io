@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather Or Not || Preston ID</title>
+    <meta charset="utf-8" />
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+
+  </head>
+  <body onload="todaysDate(); getWindChill();">
+    <header>
+      <div class="headings">
+        <h1 class="header-head1">
+          Weather You Care Or Not
+        </h1>
+        <h4 class="header-head2">
+          Whether you want the weather or not, we are going to give it to you
+        </h4>
+      </div>
+      <img
+        class="header-logo"
+        src="https://cdn.glitch.com/8e0b5acc-d454-4e67-aa14-c8098ad77086%2Ficonfinder_sun_727676.png?v=1570343078085"
+        alt="Weather You Care Or Not Logo"
+      />
+    </header>
+    <div class="dropdown">
+      <button class="dropbtn">
+        Menu
+      </button>
+      <div class="dropdown-content">
+        <nav>
+          <ul>
+            <li><a href="https://camijeanne123.github.io/Lesson-11/home.html">Home</a></li>
+            <li><a href="https://camijeanne123.github.io/Lesson-11/preston.html" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://camijeanne123.github.io/Lesson-11/stormcenter.html">Storm Center</a></li>
+            <li><a href="https://camijeanne123.github.io/Lesson-11/gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <h2 class="preston-head">
+        Preston, Idaho
+      </h2>
+      <div class="mainContain">
+        <picture class="hero-img-fig">
+          <source
+            media="(min-width: 1px)"
+            srcset="images/preston_small.jpg"
+          />
+          <source
+            media="(min-width: 501px)"
+            srcset="images/preston_medium.jpg"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="images/preston_large.jpg"
+          />
+          <img
+            class="main-img"
+            src="images/preston_original.jpg"
+            alt="Preston Fields"
+          />
+        </picture>
+        <div class="summContain">
+          <h3 class="summary-header">Weather Summary</h3>
+          <p>
+            <span class="summlabel">Currently: </span
+            ><span id="currently" class="currentsumm"></span> <br />
+            <span class="summlabel">Current Temp: </span
+            ><span id="temp" class="currentsumm"></span> <span class="currentsumm">°F</span><br />
+            <span class="summlabel">Windchill: </span
+            ><span id="chill" class="currentsumm"></span><br />
+            <span class="summlabel">Humidity: </span
+            ><span id="humidity" class="currentsumm"></span><br />
+            <span class="summlabel">Wind Speed: </span
+            ><span id="speed" class="currentsumm"></span><span class="currentsumm">mph</span>
+          </p>
+        </div>
+      </div>
+      <div class="FiveDayContain">
+        <h2>
+          5 Day Forecast
+        </h2>
+        <table>
+          <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+          <tr>
+            <td id="fiveDayIcon1"></td>
+            <td id="fiveDayIcon2"></td>
+            <td id="fiveDayIcon3"></td>
+            <td id="fiveDayIcon4"></td>
+            <td id="fiveDayIcon5"></td>
+          </tr>
+          <tr>
+            <td id="fiveDayValue1"></td>
+            <td id="fiveDayValue2"></td>
+            <td id="fiveDayValue3"></td>
+            <td id="fiveDayValue4"></td>
+            <td id="fiveDayValue5"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="articleContain">
+        <div class="artContain">
+          <h2>
+            OSA half-way to opening day
+          </h2>
+          <h6>
+            BY NECIA P. SEAMONS
+          </h6>
+          <p>
+            With generous donations to date, the Oneida Stake Academy Foundation
+            has been able to complete rock-work repairs and will have windows
+            installed by the end of the month.<br /><br>
+
+            The work brings the building’s restoration to the halfway mark in
+            its completion, said construction manager, Wayne Anderson, president
+            of DWA Construction.<br /><br>
+
+            From here on out, progress on the restoration will be less visible
+            <a
+              href="https://www.hjnews.com/preston/osa-half-way-to-opening-day/article_dbffcf60-efb8-5a1f-bfb6-7e0b59fd92ba.html" target="_blank"
+              >Continue Reading</a
+            ><br />
+          </p>
+        </div>
+        <figure class="articleImgFig">
+          <img
+            class="articleImg"
+            src="images/OSA.jpg"
+            alt="Jars"
+          />
+        </figure>
+      </div>
+      <div class="contactContain">
+        <img
+          class="mapImg"
+          src="imgs/Prestonmap.jpg"
+          alt="Map of Preston"
+        />
+        <div class="contact-total">
+          <h2 class="contactHead">
+            Contact Info
+          </h2>
+          <p class="contactInfo">
+            ☟ 123 California St<br />
+            Preston, ID 84440<br /><br />
+            ✆ (123)-456-7890<br /><br />
+            @ weatherornot@idaho.gov.us
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        © 2019 || Cami Price || BYUI || <a href="https://camijeanne123.github.io/index.html">Assignment Portal</a><br />Weather information from
+        <a href="openweathermap.org">OpenWeatherMap.org</a><br />
+        <span id="footdate"></span>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather Or Not || Preston ID</title>
+    <meta charset="utf-8" />
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/normalize.css">
+  </head>
+  <body onload="todaysDate();">
+    <header>
+      <div class="headings">
+        <h1 class="header-head1">
+          Weather You Care Or Not
+        </h1>
+        <h4 class="header-head2">
+          Whether you want the weather or not, we are going to give it to you
+        </h4>
+      </div>
+      <img
+        class="header-logo"
+        src="https://cdn.glitch.com/8e0b5acc-d454-4e67-aa14-c8098ad77086%2Ficonfinder_sun_727676.png?v=1570343078085"
+        alt="Weather You Care Or Not Logo"
+      />
+    </header>
+    <div class="dropdown">
+      <button class="dropbtn">
+        Menu
+      </button>
+      <div class="dropdown-content">
+        <nav>
+          <ul>
+            <li><a href="https://camijeanne123.github.io/Lesson-11/home.html">Home</a></li>
+            <li><a href="https://camijeanne123.github.io/Lesson-11/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://camijeanne123.github.io/Lesson-11/stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="https://camijeanne123.github.io/Lesson-11/gallery.html" >Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <h2>
+        Storm Center
+      </h2>
+      <p class="required-legend">
+          <span class="red">|   </span>  Indicates required field
+      </p>
+       <form>
+        <fieldset>
+          <legend>
+            Contact Information
+          </legend>
+          <label>Full Name: <br><input type="text" pattern="[a-zA-Z0 ]{5,}" name="full-name" required></label><br>
+         <label>Email: <br><input type="email" value="123storms@email.com" name="email"></label><br>
+         <label>Phone Number: <br><input type="tel" name="number" required></label><br>
+         <label>Zip Code: <br><input type="number" name="zip" required></label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Storm Information
+          </legend>
+         <label>Date of Storm: <br><input type="date" name="storm-date"></label><br>
+         <label>Type of Storm: <br><input list="storms" name="storm-type"></label><br>
+            <datalist id="storms">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
+           <label>Storm Severity (1-10): <br>
+          <input type="range" id="rating" value="5" min="1" max="10" step="1"  oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="severity-rating"></label>
+          <span id="ratingvalue">5</span><br>
+          <label>Storm Region: <br>
+            <select>
+                <option value="Select Region" >Select Region..</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Spring">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </select>
+            </label><br>
+          <label>Are you in danger?</label>
+            <input type="radio" name="danger" value="Yes">Yes
+            <input type="radio" name="danger" value="No">No
+            <input type="radio" name="danger" value="Maybe">Maybe
+          
+         </fieldset>
+         <fieldset>
+           <legend>
+             Additional Information
+           </legend>
+           <label>
+             Comments: 
+           <textarea name="addit-comments"></textarea><br> 
+           </label>
+         </fieldset>
+         <div class="submit-div">
+         <input type="submit" onclick="window.location.href = 'https://camijeanne123.github.io/Lesson-11/thanks.html';" name="submit-button" value="Submit Storm Center Form">
+         </div>
+      </form>
+    </main>
+    <footer>
+      <p>
+        © 2019 || Cami Price || BYUI || <a href="https://camijeanne123.github.io/index.html">Assignment Portal</a><br />
+        <span id="footdate"></span>
+      </p>
+    </footer>
+  </body>
+</html>
