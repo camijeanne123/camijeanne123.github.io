@@ -70,8 +70,7 @@ function todaysDate() {
   
           photo.setAttribute(
             "src",
-            towns[i].name + ".jpg"
-          );
+            towns[i].photo)
           photo.setAttribute("alt", towns[i].name);
           h2.textContent = towns[i].name;
           motto.textContent = towns[i].motto;

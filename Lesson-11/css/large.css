@@ -83,6 +83,7 @@
     footer {
       margin-top: 35px;
       padding: 5px;
+      max-width: 100%;
     }
     th,
     tr,
