@@ -72,6 +72,7 @@
       justify-content: center;
       font-family: "Montserrat";
       padding-top: 5px;
+      text-align: center;
     }
   
     main {
@@ -374,7 +375,7 @@
       grid-template-columns: 1fr;
       width: 85%;
     }
-    .towns section{
+    .towns, .currentEvents section{
       border: 2px solid #59c3c3;
       margin: 10px 10px 10px 0px;
       background-color: #637081;

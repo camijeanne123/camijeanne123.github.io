@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Weather Or Not || Preston ID</title>
+    <title>Weather Or Not || Fish Haven ID</title>
     <meta charset="utf-8" />
-    <script src="js/preston.js" defer></script>
+    <script src="js/fishhaven.js" defer></script>
     <link rel="stylesheet" href="css/large.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
-
   </head>
   <body onload="todaysDate(); getWindChill();">
     <header>
@@ -33,38 +32,58 @@
       <div class="dropdown-content">
         <nav>
           <ul>
-            <li><a href="https://camijeanne123.github.io/Lesson-11/home.html">Home</a></li>
-            <li><a href="https://camijeanne123.github.io/Lesson-11/preston.html" class="active">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="https://camijeanne123.github.io/Lesson-11/stormcenter.html">Storm Center</a></li>
-            <li><a href="https://camijeanne123.github.io/Lesson-11/gallery.html">Gallery</a></li>
+            <li>
+              <a href="https://camijeanne123.github.io/Lesson-11/home.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="https://camijeanne123.github.io/Lesson-11/preston.html"
+                >Preston</a
+              >
+            </li>
+            <li><a href="https://camijeanne123.github.io/Lesson-11/sodasprings.html">Soda Springs</a></li>
+            <li>
+              <a
+                href="https://camijeanne123.github.io/Lesson-11/fishhaven.html"
+                class="active"
+                >Fish Haven</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://camijeanne123.github.io/Lesson-11/stormcenter.html"
+                >Storm Center</a
+              >
+            </li>
+            <li>
+              <a href="https://camijeanne123.github.io/Lesson-11/gallery.html"
+                >Gallery</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </div>
     <main>
       <h2 class="preston-head">
-        Preston, Idaho
+        Fish Haven, Idaho
       </h2>
       <div class="mainContain">
         <picture class="hero-img-fig">
-          <source
-            media="(min-width: 1px)"
-            srcset="images/preston_small.jpg"
-          />
+          <source media="(min-width: 1px)" srcset="images/fishhaven_smal.jpg" />
           <source
             media="(min-width: 501px)"
-            srcset="images/preston_medium.jpg"
+            srcset="images/fishhaven_medium.jpg"
           />
           <source
             media="(min-width: 800px)"
-            srcset="images/preston_large.jpg"
+            srcset="images/fishhaven_large.jpg"
           />
           <img
             class="main-img"
-            src="images/preston_original.jpg"
-            alt="Preston Fields"
+            src="images/fishhaven_original.jpg"
+            alt="Fish Haven Fields"
           />
         </picture>
         <div class="summContain">
@@ -73,13 +92,15 @@
             <span class="summlabel">Currently: </span
             ><span id="currently" class="currentsumm"></span> <br />
             <span class="summlabel">Current Temp: </span
-            ><span id="temp" class="currentsumm"></span> <span class="currentsumm">°F</span><br />
+            ><span id="temp" class="currentsumm"></span>
+            <span class="currentsumm">°F</span><br />
             <span class="summlabel">Windchill: </span
             ><span id="chill" class="currentsumm"></span><br />
             <span class="summlabel">Humidity: </span
             ><span id="humidity" class="currentsumm"></span><br />
             <span class="summlabel">Wind Speed: </span
-            ><span id="speed" class="currentsumm"></span><span class="currentsumm">mph</span>
+            ><span id="speed" class="currentsumm"></span
+            ><span class="currentsumm">mph</span>
           </p>
         </div>
       </div>
@@ -115,41 +136,32 @@
       <div class="articleContain">
         <div class="artContain">
           <h2>
-            OSA half-way to opening day
+            Bear Lake is one special community, in my opinion
           </h2>
           <h6>
-            BY NECIA P. SEAMONS
+            BY A MANISTEE NEWS ADVOCATE
           </h6>
           <p>
-            With generous donations to date, the Oneida Stake Academy Foundation
-            has been able to complete rock-work repairs and will have windows
-            installed by the end of the month.<br /><br>
+            The atmosphere was electric Saturday night in Bear Lake's Hopkins Park, and it wasn't because there were 60,000 lights shining brightly on the Sparkle in the Park exhibit.<br /><br />
 
-            The work brings the building’s restoration to the halfway mark in
-            its completion, said construction manager, Wayne Anderson, president
-            of DWA Construction.<br /><br>
+            Something that makes my job interesting throughout the many years I have been doing it, is to occasionally step back and watch people. I call it being a "face in the crowd," as it is a pleasure to reactions to certain events besides having the ability to try and capture that in word and picture.<br /><br />
 
-            From here on out, progress on the restoration will be less visible
+            Yes folks, "sometimes" my job is pretty neat.
+
+What made Saturday so special was the family atmosphere among the hundreds of people who gathered for the opening night celebration. In a day and age where the family unit doesn't always exist like it did in the past, it was simply delightful 
             <a
-              href="https://www.hjnews.com/preston/osa-half-way-to-opening-day/article_dbffcf60-efb8-5a1f-bfb6-7e0b59fd92ba.html" target="_blank"
+              href="https://www.manisteenews.com/columns/article/Bear-Lake-is-one-special-community-in-my-opinion-14878402.php"
+              target="_blank"
               >Continue Reading</a
             ><br />
           </p>
         </div>
         <figure class="articleImgFig">
-          <img
-            class="articleImg"
-            src="images/OSA.jpg"
-            alt="Jars"
-          />
+          <img class="articleImg" src="images/news_man.jpg" alt="Man who wrote the article" />
         </figure>
       </div>
       <div class="contactContain">
-        <img
-          class="mapImg"
-          src="images/Prestonmap.jpg"
-          alt="Map of Preston"
-        />
+        <img class="mapImg" src="images/Prestonmap.jpg" alt="Map of Preston" />
         <div class="contact-total">
           <h2 class="contactHead">
             Contact Info
@@ -165,7 +177,10 @@
     </main>
     <footer>
       <p>
-        © 2019 || Cami Price || BYUI || <a href="https://camijeanne123.github.io/index.html">Assignment Portal</a><br />Weather information from
+        © 2019 || Cami Price || BYUI ||
+        <a href="https://camijeanne123.github.io/index.html"
+          >Assignment Portal</a
+        ><br />Weather information from
         <a href="openweathermap.org">OpenWeatherMap.org</a><br />
         <span id="footdate"></span>
       </p>

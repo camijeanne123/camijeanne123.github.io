@@ -74,6 +74,7 @@
       justify-content: center;
       font-family: "Montserrat";
       padding-top: 5px;
+      text-align: center;
     }
   
     main {
@@ -372,11 +373,14 @@
       left: 0px;
      text-align: center
     }
-    .towns section{
+    .towns, .currentEvents section{
       border: 2px solid #59c3c3;
       margin: 10px 10px 10px 0px;
       background-color: #637081;
       color: white;
+      text-align: center;
+      padding: 10px;
+      max-width: 100%;
     }
     .towns img {
           width: 50%;

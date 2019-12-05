@@ -364,12 +364,12 @@
       grid-template-columns: 1fr 1fr 1fr;
       max-width: 100%;
     }
-    .towns section{
+    .towns, .currentEvents section{
       border: 2px solid #59c3c3;
       margin: 10px 10px 10px 0px;
       background-color: #637081;
       color: white;
-      max-width: 100%;
+      width: 100%;
       text-align: center;
     }
     .towns img{
