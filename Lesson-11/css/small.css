@@ -188,13 +188,9 @@
       width: 100%;
     }
     .mapImg {
-      /*     position: absolute; */
-      max-width: 48%;
-      height: 244px;
-      left: 10%;
-      bottom: 10px;
+      max-width: 40%;
+      float: right;
       border: 1px solid black;
-      order: 1;
       padding: 2px;
     }
     .contact-total {

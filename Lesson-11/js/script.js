@@ -70,7 +70,7 @@ function todaysDate() {
   
           photo.setAttribute(
             "src",
-            "https://cdn.glitch.com/ec026a90-e487-4b73-a1b4-50a79afeb7de%2Fjars.jpeg?v=1571378071642"
+            towns[i].name + ".jpg"
           );
           photo.setAttribute("alt", towns[i].name);
           h2.textContent = towns[i].name;
