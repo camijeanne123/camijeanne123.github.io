@@ -84,6 +84,7 @@
     }
     .reservation-par{
       position: absolute;
+      color: white;
       width: 25%;
       right: 40px;
       top: 60px;
