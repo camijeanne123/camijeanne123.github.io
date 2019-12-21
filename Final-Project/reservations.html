@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Temple Inn and Suites || Reservations</title>
+    <link href="css/large.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/TempleLogo.JPG"
+        alt="Temple Inn and Suites Logo"
+        class="logo"
+      />
+      <h1 class="header-head">
+        Temple Inn and Suites
+      </h1>
+    </header>
+    <div class="dropdown">
+      <button class="dropbtn">
+        Menu
+      </button>
+      <div class="dropdown-content">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="reservations.html" class="active">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <h2 class="reservation-head">
+        Make a reservation!
+      </h2>
+       <form>
+        <fieldset>
+          <legend>
+            Contact Information
+          </legend>
+          <label>Full Name: <br><input type="text" pattern="[a-zA-Z0 ]{5,}" name="full-name" required></label><br>
+         <label>Email: <br><input type="email" value="123temples@email.com" name="email"></label><br>
+         <label>Phone Number: <br><input type="tel" name="number" required></label><br>
+         <label>Zip Code: <br><input type="number" name="zip" required></label><br>
+          <label>Home State/Country: <br><input type="text" name="state"></label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Reservation Information
+          </legend>
+         <label>Date of Stay: <br><input type="date" name="stay-date"></label><br>
+         <label>Location of Stay: <br><input list="locations" name="location"></label><br>
+            <datalist id="locations">
+              <option value="Provo, UT"></option>
+              <option value="Rexburg, ID"></option>
+              <option value="New York, New York"></option>
+              <option value="Santiago, Chile"></option>
+              <option value="London, England"></option>
+              <option value="Washington DC"></option>
+              <option value="Los Angeles, California"></option>
+              <option value="Paris, France"></option>
+            </datalist>
+           <label>Room Type Desired:<br> <input list="types-rooms" name="room-type"></label><br>
+            <datalist id="types-rooms">
+              <option value="1 twin"></option>
+              <option value="2 twins"></option>
+              <option value="1 queen"></option>
+              <option value="2 queens"></option>
+              <option value="1 king"></option>
+              <option value="1 king with jetted tub"></option>
+              <option value="1 queen suite"></option>
+              <option value="2 queen suite"></option>
+          </datalist>
+          
+          
+         </fieldset>
+         <fieldset>
+           <legend>
+             Additional Information
+           </legend>
+           <label>
+             Comments: 
+           <textarea name="addit-comments"></textarea><br> 
+           </label>
+         </fieldset>
+         <div class="submit-div">
+         <input type="submit" onclick="window.location.href = 'thanks.html';" name="submit-button" value="Make Your Reservation">
+         </div>
+      </form>
+    </main>
+    <footer>
+      <p>
+        © 2019 || Cami Price || BYUI <br />
+        <span id="footdate"></span>
+      </p>
+    </footer>
+  </body>
+</html>

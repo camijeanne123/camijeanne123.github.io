@@ -1,0 +1,23 @@
+{
+    "temples" : [
+    {
+      "name": "Manti",
+      "closure": ["2019 <br>Tuesday, 24 December 2019 - Thursday, 26 December 2019 <br> Tuesday, 31 December 2019<br>",
+      "2020<br>Wednesday, 1 January 2020<br>Saturday, 4 April 2020<br>Monday, 6 April 2020 - Monday, 20 April 2020<br>",
+      "Friday, 3 July 2020 (Limited Hours)<br>Saturday, 4 July 2020<br>Friday, 24 July 2020<br>Saturday, 3 October 2020<br>",
+      "Monday, 5 October 2020 - Monday, 19 October 2020<br>Wednesday, 25 November 2020 (Limited Hours)<br>",
+      "Thursday, 26 November 2020<br>Thursday, 24 December 2020 - Saturday, 26 December 2020<br>Thursday, 31 December 2020 (Limited Hours)"]
+    },
+    {
+      "name": "Perth",
+      "closure": ["2019<br>Wednesday, 25 December 2019<br>Thursday, 26 December 2019<br>2020<br>Wednesday, 1 January 2020<br>Saturday, 11 April 2020<br>Saturday, 25 April 2020<br>Monday, 11 May 2020 - Tuesday, 26 May 2020<br>Saturday, 10 October 2020<br>Monday, 2 November 2020 - Tuesday, 17 November 2020<br>Friday, 25 December 2020<br>Saturday, 26 December 2020"]
+    },
+    {
+      "name": "Cardston",
+      "closure": ["2019<br>Tuesday, 24 December 2019 - Thursday, 26 December 2019<br>Tuesday, 31 December 2019<br>2020<br>Wednesday, 1 January 2020<br>Monday, 13 January 2020 - Monday, 27 January 2020<br>Saturday, 4 April 2020<br>Monday, 3 August 2020 - Monday, 17 August 2020<br>Saturday, 3 October 2020<br>Wednesday, 11 November 2020<br>Thursday, 24 December 2020<br>Friday, 25 December 2020<br>Saturday, 26 December 2020<br>Thursday, 31 December 2020"]
+    },
+    {
+      "name": "Palmyra",
+      "closure": ["2019<br>Monday, 23 December 2019<br>Tuesday, 24 December 2019<br>Wednesday, 25 December 2019<br>Tuesday, 31 December 2019<br>2020<br>Wednesday, 1 January 2020<br>Monday, 10 February 2020 - Monday, 24 February 2020<br>Tuesday, 25 February 2020 - Wednesday, 26 February 2020<br>Saturday, 4 April 2020<br>Saturday, 4 July 2020<br>Monday, 7 September 2020 - Saturday, 19 September 2020<br>Saturday, 3 October 2020<br>Thursday, 26 November 2020<br>Thursday, 24 December 2020<br>Friday, 25 December 2020<br>Thursday, 31 December 2020"]
+    }]
+      }
